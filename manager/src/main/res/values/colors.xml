@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification">#5B4BDB</color>
+
+    <color name="app_color_light">#00A878</color>
+    <color name="app_color_dark">#22E6A0</color>
+
+    <!-- Brand colours, the same in light and dark themes -->
+    <color name="brand_violet">#FF5B4BDB</color>
+    <color name="brand_teal">#FF00B8A0</color>
+    <color name="brand_amber">#FFF59E0B</color>
+    <color name="brand_pink">#FFE5488B</color>
+    <color name="hero_running_start">#FF5B4BDB</color>
+    <color name="hero_running_center">#FF3F7FE0</color>
+    <color name="hero_running_end">#FF00B8A0</color>
+    <color name="hero_stopped_start">#FF4A4E63</color>
+    <color name="hero_stopped_end">#FF23263A</color>
+    <color name="hero_text">#FFFFFFFF</color>
+    <color name="hero_text_secondary">#D9FFFFFF</color>
+    <color name="hero_overlay">#33FFFFFF</color>
+    <color name="hero_pulse">#66FFFFFF</color>
+
+    <color name="widget_background">#FFF4F3F8</color>
+    <color name="widget_text_primary">#DE000000</color>
+    <color name="widget_text_secondary">#99000000</color>
+
+    <!-- Neon look: dark cards with a glowing outline -->
+    <color name="neon_card">#F2091512</color>
+    <color name="neon_background">#FF03080A</color>
+    <color name="neon_card_stroke">#FF2A6B58</color>
+    <color name="neon_row_stroke">#FF1F4038</color>
+    <color name="neon_text">#FFE8FFF8</color>
+    <color name="neon_text_secondary">#FF7FA39B</color>
+    <color name="neon_violet">#FF22E6A0</color>
+    <color name="neon_violet_fill">#1F22E6A0</color>
+    <color name="neon_teal">#FF22E6A0</color>
+    <color name="neon_teal_fill">#1F22E6A0</color>
+    <color name="neon_amber">#FF22E6A0</color>
+    <color name="neon_amber_fill">#1F22E6A0</color>
+    <color name="neon_pink">#FF22E6A0</color>
+    <color name="neon_pink_fill">#1F22E6A0</color>
+    <color name="neon_blue">#FF22E6A0</color>
+    <color name="neon_blue_fill">#1F22E6A0</color>
+    <color name="neon_green">#FF22E6A0</color>
+    <color name="neon_green_fill">#1F22E6A0</color>
+    <color name="neon_red">#FF22E6A0</color>
+    <color name="neon_red_fill">#1F22E6A0</color>
+    <color name="neon_gray">#FF22E6A0</color>
+    <color name="neon_gray_fill">#1F22E6A0</color>
+</resources>
