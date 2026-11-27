@@ -20,7 +20,7 @@
 
 **Rootzuku M7L+** is an extended build of the open‑source **[Shizuku](https://github.com/RikkaApps/Shizuku)** project. It grants apps system‑level (ADB / shell) privileges **without root**, started over wireless debugging, USB, or a computer.
 
-On top of the original core it adds **dozens of tools** aimed at gamers and power users — a per‑game performance booster, a local VPN ad‑blocker, app and file managers, and a full set of network, display and developer utilities — all in a clean neon UI.
+On top of the original core it adds **dozens of tools** aimed at gamers and power users — a per‑game performance booster, a local VPN ad‑blocker, a **stealth mode** that hides developer options from apps which detect them, app and file managers, and a full set of network, display and developer utilities — all in a clean neon UI.
 
 | Package | `com.m7l.shizuku` |
 |---|---|
@@ -68,13 +68,18 @@ On top of the original core it adds **dozens of tools** aimed at gamers and powe
 - Keep mobile data active, disable Wi‑Fi scan throttling.
 - Immersive full screen, turn off all animations, toggle location.
 
+### 🕵️ Stealth Mode — bypass developer‑options detection
+- Protection for apps that **refuse to run when Developer options / USB debugging are on** (banking apps, protected games, some payment apps).
+- Pick those apps once. When you open one through Stealth, it **automatically turns off Developer options, USB debugging and wireless debugging** so the app sees a clean device.
+- It watches for you leaving the app, then **restores the settings and restarts the service** on its own.
+- No root — done through the already‑running ADB service. *(Re‑starting the service afterwards uses wireless debugging, so keep Wi‑Fi on.)*
+
 ### 🔧 More Tools
 - Dual‑pane **File manager**.
 - **Activity launcher** (open any screen inside any app) + favorites.
 - **Per‑app language** (shows each app's current language).
 - **Force dark mode** for the whole system or per app.
 - **Service doctor**, **Terminal**, **Logs**, **Backup & restore**.
-- **Stealth mode** (hidden apps that open with developer settings off).
 
 ---
 
