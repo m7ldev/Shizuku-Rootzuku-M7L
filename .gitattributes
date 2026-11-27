@@ -1,9 +1,0 @@
-* text=auto eol=lf
-
-*.bat text eol=crlf
-*.jar binary
-
-# GitHub language bar (Linguist): count the real app code, hide generated AIDL
-*.kt   linguist-detectable=true linguist-vendored=false linguist-generated=false
-*.java linguist-detectable=true linguist-vendored=false linguist-generated=false
-*.aidl linguist-generated=true
