@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tile_tools"
+            style="@style/ToolTile"
+            android:background="@drawable/neon_card_violet">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tool_icon_violet"
+                android:importantForAccessibility="no"
+                android:padding="9dp"
+                android:src="@drawable/ic_tools_24"
+                android:tint="@color/neon_violet"
+                android:tintMode="src_in" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:shadowColor="@color/neon_violet"
+                    android:shadowRadius="14"
+                    android:text="@string/tools_title"
+                    android:textColor="@color/neon_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tile_tools_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/tile_tools_summary"
+                    android:textColor="@color/neon_text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tile_apps"
+            style="@style/ToolTile"
+            android:background="@drawable/neon_card_amber">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tool_icon_amber"
+                android:importantForAccessibility="no"
+                android:padding="9dp"
+                android:src="@drawable/ic_key_24"
+                android:tint="@color/neon_amber"
+                android:tintMode="src_in" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:shadowColor="@color/neon_amber"
+                    android:shadowRadius="14"
+                    android:text="@string/tile_apps_title"
+                    android:textColor="@color/neon_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tile_apps_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/tile_apps_summary_default"
+                    android:textColor="@color/neon_text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tile_stealth"
+            style="@style/ToolTile"
+            android:background="@drawable/neon_card_blue">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tool_icon_blue"
+                android:importantForAccessibility="no"
+                android:padding="9dp"
+                android:src="@drawable/ic_stealth_24"
+                android:tint="@color/neon_blue"
+                android:tintMode="src_in" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:shadowColor="@color/neon_blue"
+                    android:shadowRadius="14"
+                    android:text="@string/tile_hidden_apps_title"
+                    android:textColor="@color/neon_text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tile_stealth_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/stealth_choose_apps"
+                    android:textColor="@color/neon_text_secondary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
