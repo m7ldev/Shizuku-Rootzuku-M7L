@@ -10,8 +10,6 @@
 ![Based on](https://img.shields.io/badge/based%20on-Shizuku-FF7139?style=for-the-badge)
 ![M7L TEAM](https://img.shields.io/badge/by-M7L%20TEAM-00E5FF?style=for-the-badge)
 
-### [![Download APK](https://img.shields.io/badge/⬇%20Download%20APK-Latest%20release-00E5A0?style=for-the-badge&logo=android&logoColor=white)](https://github.com/m7ldev/Shizuku-Rootzuku-M7L/releases/latest)
-
 <img src="screenshots/01-home.jpg" width="23%"> <img src="screenshots/02-tools.jpg" width="23%"> <img src="screenshots/03-performance.jpg" width="23%"> <img src="screenshots/06-adblock.jpg" width="23%">
 
 </div>
