@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hero_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hero_stopped"
+    android:duplicateParentState="true"
+    android:gravity="center_vertical"
+    android:minHeight="0dp"
+    android:orientation="horizontal"
+    android:paddingStart="18dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="18dp"
+    android:paddingBottom="16dp">
+
+    <FrameLayout
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:clipChildren="false">
+
+        <View
+            android:id="@+id/pulse"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hero_pulse"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@android:id/icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/hero_icon_background"
+            android:importantForAccessibility="no"
+            android:padding="10dp"
+            android:src="@drawable/ic_server_error_24dp"
+            android:tint="@color/hero_text"
+            android:tintMode="src_in" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hero_chip"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:textAllCaps="true"
+            android:textColor="@color/hero_text"
+            android:textSize="11sp"
+            tools:text="Active" />
+
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/hero_text"
+            android:textSize="17sp"
+            tools:text="Shizuku M7L+ is running" />
+
+        <TextView
+            android:id="@android:id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/hero_text_secondary"
+            android:textSize="13sp"
+            tools:text="Version 13.7, adb" />
+
+    </LinearLayout>
+
+</LinearLayout>
