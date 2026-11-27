@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/file_row_background"
+    android:gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:minHeight="38dp"
+    android:orientation="horizontal"
+    android:paddingStart="3dp"
+    android:paddingTop="3dp"
+    android:paddingEnd="3dp"
+    android:paddingBottom="3dp">
+
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="6dp"
+        android:importantForAccessibility="no"
+        android:padding="5dp"
+        tools:background="@drawable/tool_icon_teal"
+        tools:src="@drawable/ic_folder_24" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:maxLines="2"
+            android:textAlignment="viewStart"
+            android:textColor="@color/neon_text"
+            android:textSize="11.5sp"
+            tools:text="File name.zip" />
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/neon_text_secondary"
+            android:textSize="9sp"
+            tools:text="12 MB · 2026-11-26" />
+
+    </LinearLayout>
+
+</LinearLayout>
