@@ -1,0 +1,44 @@
+plugins {
+    id("idea")
+}
+
+idea.module {
+    excludeDirs += file('out')
+}
+
+subprojects {
+    plugins.withId("com.android.base") {
+        android {
+            compileSdk = 36
+            buildToolsVersion = "36.0.0"
+            ndkVersion = "29.0.14206865"
+            defaultConfig {
+                minSdk = 24
+                targetSdk = 36
+            }
+            compileOptions {
+                sourceCompatibility = JavaVersion.VERSION_21
+                targetCompatibility = JavaVersion.VERSION_21
+            }
+        }
+    }
+}
+
+apply from: 'api/manifest.gradle'
+// Fall back to fixed values when the sources are not inside a git repository
+def gitCommitId = 'custom'
+def gitCommitCount = 1100
+try {
+    def id = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+    def count = 'git rev-list --count HEAD'.execute([], project.rootDir).text.trim()
+    if (!id.isEmpty() && count.isInteger()) {
+        gitCommitId = id
+        gitCommitCount = Math.max(Integer.parseInt(count), 1100)
+    }
+} catch (Throwable ignored) {
+}
+def baseVersionName = "${api_version_major}.6.0"
+ext {
+    versionCode = gitCommitCount
+    versionName = "${baseVersionName}.r${gitCommitCount}.${gitCommitId}"
+}
